@@ -1,0 +1,1049 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 50%; }
+
+body {
+  box-sizing: border-box; }
+
+.main {
+  box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box; }
+
+.nav {
+  background-color: #FFFFFF;
+  width: 100vw;
+  height: 10rem; }
+
+.img {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.img1 {
+  width: 20rem;
+  margin-top: 1rem;
+  margin-bottom: 2px; }
+
+.col {
+  display: none; }
+
+.cart1 {
+  background-color: red; }
+
+#menuToggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none; }
+
+#menuToggle input {
+  display: flex;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2; }
+
+#menuToggle span {
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #141313;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%; }
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%; }
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #36383F; }
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2); }
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px); }
+
+#menu {
+  position: absolute;
+  top: 16rem !important;
+  right: 0 !important;
+  width: 75vw;
+  height: 25rem;
+  box-shadow: 0 0 2px #85888C;
+  margin: -70px 0;
+  margin-left: 0;
+  padding: 50px;
+  padding-top: 18px;
+  background-image: linear-gradient(to right top, #070707, #4e4e4e);
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+  font-weight: 500;
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+
+#menu li {
+  padding: 1rem 0;
+  transition-delay: 2s;
+  list-style: none; }
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+  opacity: 1; }
+
+.shop {
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none; }
+  .shop a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif; }
+
+.line {
+  border: 1px solid #ccc;
+  margin-top: 1rem; }
+
+.line1 {
+  border: 1px solid #ccc;
+  margin-bottom: 1rem; }
+
+.icon1 {
+  fill: #080808;
+  width: 2.5rem;
+  height: 2.5rem; }
+
+.create {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  /*
+    &__name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+      
+    }
+    &__name1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: inherit;
+        background-color: rgb(156, 147, 147);
+        border: none;
+        padding: .7rem 2rem;
+        width: 70%;
+        margin-bottom: 1rem;
+        color: black;
+    }*/ }
+  .create__group:not(:last-child) {
+    margin-bottom: 2rem; }
+  .create__center {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #0c0c0c; }
+  .create__ret {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .create__ret1, .create a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer; }
+    .create__ret1:hover, .create a:hover {
+      text-decoration: underline; }
+  .create__ret2, .create a {
+    margin-left: 1.7rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer; }
+    .create__ret2:hover, .create a:hover {
+      text-decoration: underline; }
+  .create__input {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: #e4eff0;
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 80vw;
+    display: block; }
+    .create__input:focus:invalid {
+      border-bottom: 3px solid #90af6c; }
+    .create__input::-webkit-input-placeholder {
+      color: #999; }
+  .create__input:focus {
+    outline: none;
+    box-sizing: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #161616; }
+  .create__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s; }
+  .create__input:placeholder-shown + .create__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); }
+  .create__btn:link, .create__btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    color: white;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative; }
+  .create__btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 1rem rgba(160, 156, 156, 0.2); }
+  .create__btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(139, 137, 137, 0.2); }
+  .create__btn {
+    background-color: #1b1a1a;
+    color: #777;
+    text-decoration: none; }
+  .create__btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .4s; }
+  .create__btn::after {
+    background-color: #0f0f0f; }
+  .create__btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.login {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none; }
+  .login__hidden {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none; }
+  .login__ret {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .login__ret1, .login a {
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer; }
+    .login__ret1:hover, .login a:hover {
+      text-decoration: underline; }
+  .login__ret2, .login a {
+    margin-left: 1.7rem;
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer; }
+    .login__ret2:hover, .login a:hover {
+      text-decoration: underline; }
+
+.video__content {
+  width: 100vw;
+  height: 56vw;
+  margin-top: 10rem; }
+
+.header2 {
+  position: fixed; }
+
+.category {
+  backface-visibility: hidden; }
+  .category__view {
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    color: #000000;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    background-image: linear-gradient(to right, #747474, #aaa9a9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .category__view2 {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-top: 2px;
+    margin-bottom: 3rem;
+    color: #000000;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    background-image: linear-gradient(to right, #464545, #968c8c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .category__jacket {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 42px;
+    margin-left: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    background-image: linear-gradient(to right, #747474, #aaa9a9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.background {
+  background-image: url(/img/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+  .background__friday {
+    text-transform: uppercase;
+    display: inline-block;
+    background-image: linear-gradient(to right, #010706, #464040);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    font-weight: 700;
+    margin-top: 9rem; }
+
+.footer {
+  padding: 0 4rem;
+  margin-top: 3rem;
+  /* for desktop */
+  /* for mobile */ }
+  .footer__customer {
+    padding-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    display: block;
+    border-bottom: 1px solid #000000; }
+  .footer__contact__list {
+    margin-top: 2rem;
+    list-style: none;
+    text-transform: uppercase; }
+    .footer__contact__list__name {
+      padding-bottom: 2rem;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgba(0, 0, 0, 0.9);
+      cursor: pointer; }
+      .footer__contact__list__name:hover {
+        text-decoration: underline; }
+  .footer__about1 {
+    padding-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    display: block;
+    border-bottom: 1px solid #000000; }
+    .footer__about1__hebe {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 26px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000000;
+      margin-top: 2rem; }
+    .footer__about1__fashion {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+      color: #000000; }
+    .footer__about1__style {
+      font-size: 1.8rem;
+      font-weight: 300;
+      line-height: 2.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      color: #000000;
+      margin-top: 1rem; }
+    .footer__about1__mix {
+      font-size: 1.8rem;
+      font-weight: 200;
+      line-height: 2.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      color: #000000;
+      margin-top: 1rem; }
+    .footer__about1__classic {
+      font-size: 1.8rem;
+      font-weight: 200;
+      line-height: 2.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      color: #000000;
+      margin-top: 1rem; }
+    .footer__about1__store {
+      font-size: 1.8rem;
+      font-weight: 200;
+      line-height: 2.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      color: #000000;
+      margin-top: 1rem; }
+  .footer__newsletter1 {
+    padding-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    display: block;
+    border-bottom: 1px solid #000000; }
+  .footer__mail {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .footer__newsletter {
+    margin-top: 2rem; }
+  .footer__input {
+    border: none;
+    outline: none; }
+  .footer__input44 {
+    padding: -1px 5px;
+    outline: none;
+    background-color: #4d5050; }
+  .footer__bot {
+    padding-right: 5px;
+    background-color: black;
+    color: white;
+    margin-top: 3px; }
+  .footer__image {
+    margin-top: 7rem; }
+  .footer__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; }
+  .footer__face {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem; }
+  .footer__inst {
+    height: 3rem;
+    width: 3rem; }
+  .footer__copycat {
+    margin-top: 3rem;
+    text-align: center; }
+  .footer__copy {
+    margin-bottom: 3rem;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+    cursor: pointer; }
+    .footer__copy:hover {
+      text-decoration: underline; }
+  .footer__whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100; }
+  .footer__whatsapp-icon {
+    margin-top: 16px; }
+  @media screen and (max-width: 767px) {
+    .footer .whatsapp-icon {
+      margin-top: 10px; }
+    .footer .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px; } }
+
+.header {
+  font-size: 1.4rem;
+  background-color: #000000;
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .header__search {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .header__search__input {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: inherit;
+      background-color: #FFFFFF;
+      border: none;
+      color: inherit;
+      padding: .7rem 2rem;
+      border-radius: 10rem;
+      width: 70%;
+      transition: all .2s;
+      margin-right: -3.5rem; }
+      .header__search__input:focus {
+        outline: none;
+        width: 100%;
+        background-color: #FFFFFF; }
+      .header__search__input::-webkit-input-placeholder {
+        font-weight: 100;
+        color: #ccc; }
+    .header__search__button {
+      border: none;
+      background-color: #FFFFFF; }
+      .header__search__button:focus {
+        outline: none;
+        background-color: #FFFFFF; }
+      .header__search__button:active {
+        transform: translateY(2px); }
+    .header__search__icon {
+      height: 2rem;
+      width: 2rem;
+      fill: #ccc; }
+  .header__log {
+    /*display: flex;
+        justify-content: flex-end;
+      
+        
+        margin-left: 2rem;*/ }
+  .header__login2 {
+    color: #FFFFFF;
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    flex: 0 0 20%; }
+    .header__login2:hover {
+      text-decoration: underline; }
+  .header__login {
+    flex: 0 0 10%;
+    color: #FFFFFF;
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: 9rem;
+    cursor: pointer; }
+    .header__login:hover {
+      text-decoration: underline; }
+    .header__login:not(:first-child) {
+      margin-right: 2.5rem; }
+
+/*.grid{
+    display: grid;
+    
+    grid-template-columns: repeat(8, 1fr);
+   
+    grid-auto-rows: 90vh;
+    grid-gap:4rem;
+ 
+   
+    
+
+   
+    &__female{
+      
+        grid-row: 1;
+        grid-column: 1 /span 8;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        grid-gap: 2rem;
+        padding: 0 3rem;
+        grid-row-gap:15rem;
+        margin-top: 1rem;
+
+        @media screen and (min-width: 1000px) {
+            grid-row: 1;
+        grid-column: 1 /span 4;
+        }
+
+        &__shoe{
+           text-align: center;
+
+           &__img1{
+               cursor: pointer;
+           }
+
+           &__remain{
+            font-size: 11px;
+            font-weight: 800;
+            line-height: 18px;
+            color: #262626;
+           }
+           
+           &__always{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #000000;
+        }
+        
+        &__cardi{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #706f6f;
+            font-style:italic;    
+        }
+        
+        &__price{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #000000;
+        }
+        }
+
+    }
+
+    &__bag{
+       
+        grid-row: 3;
+        grid-column: 1 /span 8;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        grid-gap: 8rem;
+        grid-row-gap:15rem;
+        padding: 0 3rem;
+
+        &__ladies{
+            text-align: center;
+            justify-content: center;
+
+            &__handle{
+                font-size: 11px;
+                font-weight: 800;
+                line-height: 18px;
+                color: #262626;
+            }
+            &__handle2{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #000000;
+            }
+
+            &__cardi{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #706f6f;
+                font-style:italic;    
+            }
+            &__price3{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #000000;
+            }
+        }
+       
+        
+       
+    }
+
+    &__shoe1{
+      
+        grid-row: 2;
+        grid-column: 1 /span 8;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        grid-gap: 8rem;
+        grid-row-gap:15rem;
+        padding: 0 3rem;
+
+        &__men{
+            text-align: center;
+            justify-content: center;
+            &__red{
+                font-size: 11px;
+                font-weight: 800;
+                line-height: 18px;
+                color: #262626;
+            }
+            &__nike{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #000000;
+            }
+
+            &__cardi{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #706f6f;
+                font-style:italic;    
+            }
+            &__price2{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #000000;
+            }
+        }
+       
+    }
+
+    &__wristwatch{
+        grid-row: 4;
+        grid-column: 1 /span 8;
+        
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        grid-gap: 8rem;
+        grid-row-gap:15rem;
+        padding: 0 3rem;
+
+
+        &__brand{
+            text-align: center;
+            justify-content: center;
+
+            &__name{
+                font-size: 11px;
+                font-weight: 800;
+                line-height: 18px;
+                color: #262626;
+            }
+            &__name2{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #000000;
+            }
+
+            &__cardi{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #706f6f;
+                font-style:italic;    
+            }
+            &__price4{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #000000;
+            }
+        }
+       
+       
+    }
+}
+*/
+.grid__menswear {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 42px;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  background-image: linear-gradient(to right, #747474, #aaa9a9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.grid__female {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around; }
+  .grid__female__shoe {
+    text-align: center; }
+    .grid__female__shoe__img1 {
+      cursor: pointer;
+      height: 30rem;
+      width: 19rem;
+      margin-top: 1rem; }
+    .grid__female__shoe__remain {
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 18px;
+      color: #262626; }
+    .grid__female__shoe__always {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #000000; }
+    .grid__female__shoe__cardi {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #706f6f;
+      font-style: italic; }
+    .grid__female__shoe__price {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #000000; }
+
+.grid__shoe1 {
+  margin-top: 1px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around; }
+  .grid__shoe1__men {
+    text-align: center;
+    justify-content: center; }
+    .grid__shoe1__men__img5 {
+      cursor: pointer;
+      height: 30rem;
+      width: 19rem;
+      margin-top: 1rem;
+      margin-bottom: 1px; }
+    .grid__shoe1__men__red {
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 18px;
+      color: #262626; }
+    .grid__shoe1__men__nike {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #000000; }
+    .grid__shoe1__men__cardi {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #706f6f;
+      font-style: italic; }
+    .grid__shoe1__men__price2 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #000000; }
+
+.grid__bags {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 42px;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  background-image: linear-gradient(to right, #747474, #aaa9a9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.grid__bag {
+  display: flex;
+  margin-top: 1px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around; }
+  .grid__bag__ladies {
+    text-align: center;
+    justify-content: center; }
+    .grid__bag__ladies__img9 {
+      cursor: pointer;
+      height: 30rem;
+      width: 19rem;
+      margin-top: 2rem;
+      margin-bottom: 1px; }
+    .grid__bag__ladies__handle {
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 18px;
+      color: #262626; }
+    .grid__bag__ladies__handle2 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #000000; }
+    .grid__bag__ladies__cardi {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #706f6f;
+      font-style: italic; }
+    .grid__bag__ladies__price3 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #000000; }
+
+.grid__wristwatch5 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 42px;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  background-image: linear-gradient(to right, #747474, #aaa9a9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.grid__wristwatch {
+  margin-top: 1px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around; }
+  .grid__wristwatch__brand {
+    text-align: center;
+    justify-content: center; }
+    .grid__wristwatch__brand__img13 {
+      cursor: pointer;
+      height: 30rem;
+      width: 19rem;
+      margin-top: 2rem;
+      margin-bottom: 1px; }
+    .grid__wristwatch__brand__name {
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 18px;
+      color: #262626; }
+    .grid__wristwatch__brand__name2 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #000000; }
+    .grid__wristwatch__brand__cardi {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #706f6f;
+      font-style: italic; }
+    .grid__wristwatch__brand__price4 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #000000; }

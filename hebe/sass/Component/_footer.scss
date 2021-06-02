@@ -1,0 +1,259 @@
+.footer{
+    padding: 0 4rem;
+    margin-top: 3rem;
+    
+
+  &__customer{
+     padding-bottom: 1rem;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000000;
+      display:block;
+      border-bottom: 1px solid #000000;
+     
+  }
+
+  &__contact{
+    
+
+    &__list{
+       margin-top: 2rem;
+       list-style: none;
+       text-transform: uppercase;
+       
+        &__name{
+            padding-bottom: 2rem;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(0,0,0,0.9);
+            cursor: pointer;
+
+            &:hover{
+                text-decoration: underline;
+            }
+       }
+     }
+  }
+
+  //&__about{
+
+   
+    //}
+
+    &__about1{
+        padding-bottom: 1rem;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000000;
+        display:block;
+        border-bottom: 1px solid #000000;
+
+
+        &__hebe{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000000;
+            margin-top: 2rem;
+        }
+
+        &__fashion{
+            font-size: 1.8rem;
+           
+            line-height: 2.8rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            color: #000000;
+        }
+
+        &__style{
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 2.8rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            color: #000000;
+            margin-top: 1rem;
+        }
+
+        &__mix{
+            font-size: 1.8rem;
+            font-weight: 200;
+            line-height: 2.8rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            color: #000000;
+            margin-top: 1rem;
+        }
+
+        &__classic{
+            font-size: 1.8rem;
+            font-weight: 200;
+            line-height: 2.8rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            color: #000000;
+            margin-top: 1rem;
+        }
+
+        &__store{
+            font-size: 1.8rem;
+            font-weight: 200;
+            line-height: 2.8rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            color: #000000;
+            margin-top: 1rem;
+        }
+      }
+
+
+    &__newsletter1{
+        padding-bottom: 1rem;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000000;
+        display:block;
+        border-bottom: 1px solid #000000;
+    }
+
+    &__mail{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000000;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+   
+    
+
+  
+ 
+
+
+
+
+
+
+
+  &__newsletter{
+    margin-top: 2rem;
+  }
+  
+    &__input{
+        
+        border: none;
+       outline: none;
+       
+        
+       
+        
+        
+    }
+    &__input44{
+        padding: -1px 5px;
+        outline: none;
+        background-color: rgb(77, 80, 80);
+
+     }
+
+    &__bot{
+        padding-right: 5px;
+        background-color: black;
+        color: white;
+        margin-top: 3px;
+    }
+
+      
+  &__image{
+     margin-top: 7rem;
+  }
+
+
+  &__media{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2rem;
+   
+  }
+
+  &__face{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+   
+  }
+  &__inst{
+    height: 3rem;
+    width: 3rem;
+   
+   
+}
+
+
+    &__copycat{
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    &__copy{
+        margin-bottom: 3rem;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(0,0,0,0.9);
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    
+/* for desktop */
+&__whatsapp_float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:20px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+        font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:100;
+}
+
+&__whatsapp-icon {
+	margin-top:16px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+}
+

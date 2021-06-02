@@ -1,0 +1,118 @@
+
+.header{
+    font-size: 1.4rem;
+    background-color:$color-nav-black ;
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+   
+    
+    
+   
+    &__search{
+       
+        flex: 0 0 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        &__input{
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: inherit;
+           background-color: $color-header-white;
+           border: none;
+           color: inherit;
+           padding: .7rem 2rem;
+           border-radius: 10rem;
+           width: 70%;
+           transition:all .2s;
+           margin-right: -3.5rem;
+           &:focus{
+               outline: none;
+               width: 100%;
+               background-color: $color-header-white;
+           }
+
+           &::-webkit-input-placeholder{
+               font-weight: 100;
+               color: #ccc;
+           }
+        }
+    
+        &__button{
+           border: none;
+           background-color: $color-header-white;
+           
+           &:focus{
+            outline: none;
+            
+            background-color: $color-header-white;
+            }
+
+            &:active{
+                transform:translateY(2px) ;
+            }
+
+        }
+    
+        &__icon{
+            height: 2rem;
+            width: 2rem;
+            fill: #ccc;
+        }
+    }
+    
+
+    &__log{
+        /*display: flex;
+        justify-content: flex-end;
+      
+        
+        margin-left: 2rem;*/
+        
+    }
+    &__login2{
+        color: $color-header-white;
+        line-height: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        flex: 0 0 20%;
+        
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__login{
+        flex: 0 0 10%;
+        color: $color-header-white;
+        line-height: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-left: 9rem;
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: underline;
+        }
+
+        &:not(:first-child){
+            margin-right:2.5rem;
+        }
+        
+       
+      
+    }
+
+    
+
+    
+}

@@ -1,0 +1,496 @@
+/*.grid{
+    display: grid;
+    
+    grid-template-columns: repeat(8, 1fr);
+   
+    grid-auto-rows: 90vh;
+    grid-gap:4rem;
+ 
+   
+    
+
+   
+    &__female{
+      
+        grid-row: 1;
+        grid-column: 1 /span 8;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        grid-gap: 2rem;
+        padding: 0 3rem;
+        grid-row-gap:15rem;
+        margin-top: 1rem;
+
+        @media screen and (min-width: 1000px) {
+            grid-row: 1;
+        grid-column: 1 /span 4;
+        }
+
+        &__shoe{
+           text-align: center;
+
+           &__img1{
+               cursor: pointer;
+           }
+
+           &__remain{
+            font-size: 11px;
+            font-weight: 800;
+            line-height: 18px;
+            color: #262626;
+           }
+           
+           &__always{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #000000;
+        }
+        
+        &__cardi{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #706f6f;
+            font-style:italic;    
+        }
+        
+        &__price{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #000000;
+        }
+        }
+
+    }
+
+    &__bag{
+       
+        grid-row: 3;
+        grid-column: 1 /span 8;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        grid-gap: 8rem;
+        grid-row-gap:15rem;
+        padding: 0 3rem;
+
+        &__ladies{
+            text-align: center;
+            justify-content: center;
+
+            &__handle{
+                font-size: 11px;
+                font-weight: 800;
+                line-height: 18px;
+                color: #262626;
+            }
+            &__handle2{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #000000;
+            }
+
+            &__cardi{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #706f6f;
+                font-style:italic;    
+            }
+            &__price3{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #000000;
+            }
+        }
+       
+        
+       
+    }
+
+    &__shoe1{
+      
+        grid-row: 2;
+        grid-column: 1 /span 8;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        grid-gap: 8rem;
+        grid-row-gap:15rem;
+        padding: 0 3rem;
+
+        &__men{
+            text-align: center;
+            justify-content: center;
+            &__red{
+                font-size: 11px;
+                font-weight: 800;
+                line-height: 18px;
+                color: #262626;
+            }
+            &__nike{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #000000;
+            }
+
+            &__cardi{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #706f6f;
+                font-style:italic;    
+            }
+            &__price2{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #000000;
+            }
+        }
+       
+    }
+
+    &__wristwatch{
+        grid-row: 4;
+        grid-column: 1 /span 8;
+        
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 30vh;
+        grid-gap: 8rem;
+        grid-row-gap:15rem;
+        padding: 0 3rem;
+
+
+        &__brand{
+            text-align: center;
+            justify-content: center;
+
+            &__name{
+                font-size: 11px;
+                font-weight: 800;
+                line-height: 18px;
+                color: #262626;
+            }
+            &__name2{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #000000;
+            }
+
+            &__cardi{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #706f6f;
+                font-style:italic;    
+            }
+            &__price4{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #000000;
+            }
+        }
+       
+       
+    }
+}
+*/
+
+
+.grid{
+
+    &__menswear{
+        font-size: 24px;
+        font-weight:300;
+        line-height:42px;
+       margin-top: 3rem;
+        margin-left: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        background-image: linear-gradient(to right, rgb(116, 116, 116), rgb(170, 169, 169));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    //female jacket
+   
+    &__female{
+
+       
+
+       flex-direction: row;
+       flex-wrap: wrap;
+       display: flex;
+       
+       justify-content: center;
+       justify-content: space-around;
+
+
+       &__shoe{
+            text-align: center;
+            
+
+        &__img1{
+            cursor: pointer;
+            height: 30rem;
+            width: 19rem;
+            margin-top: 1rem;
+        }
+
+        &__remain{
+         font-size: 11px;
+         font-weight: 800;
+         line-height: 18px;
+         color: #262626;
+        }
+        
+        &__always{
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 22px;
+         color: #000000;
+     }
+     
+     &__cardi{
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 22px;
+         color: #706f6f;
+         font-style:italic;    
+     }
+     
+     &__price{
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 24px;
+         color: #000000;
+     }
+     }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //mens wear----------Starting-----------------//
+
+    &__shoe1{
+        margin-top: 1px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        
+        justify-content: center;
+        justify-content: space-around;
+
+        &__men{
+
+            text-align: center;
+            justify-content: center;
+
+            &__img5{
+                cursor: pointer;
+                height: 30rem;
+                width: 19rem;
+                margin-top: 1rem;
+                margin-bottom: 1px;
+            }
+            &__red{
+                font-size: 11px;
+                font-weight: 800;
+                line-height: 18px;
+                color: #262626;
+            }
+            &__nike{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #000000;
+            }
+
+            &__cardi{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #706f6f;
+                font-style:italic;    
+            }
+            &__price2{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #000000;
+            }
+        }
+       
+    }
+    //mens wear endding ------------------------------//
+ 
+
+
+
+    // BAG----------START------------------//
+    &__bags{
+        font-size: 24px;
+        font-weight:300;
+        line-height:42px;
+       margin-top: 3rem;
+        margin-left: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        background-image: linear-gradient(to right, rgb(116, 116, 116), rgb(170, 169, 169));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    &__bag{
+        display: flex;
+        margin-top: 1px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        
+        justify-content: center;
+        justify-content: space-around;
+
+        &__ladies{
+
+            text-align: center;
+            justify-content: center;
+
+            &__img9{
+                cursor: pointer;
+                height: 30rem;
+                width: 19rem;
+                margin-top: 2rem;
+                margin-bottom: 1px;
+            }
+            &__handle{
+                font-size: 11px;
+                font-weight: 800;
+                line-height: 18px;
+                color: #262626;
+            }
+            &__handle2{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #000000;
+            }
+
+            &__cardi{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #706f6f;
+                font-style:italic;    
+            }
+            &__price3{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #000000;
+            }
+        }
+       
+    
+    }
+    
+
+    //BAG------------------------ENDDING-----------------//
+    &__wristwatch5{
+        font-size: 24px;
+        font-weight:300;
+        line-height:42px;
+       margin-top: 3rem;
+        margin-left: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        background-image: linear-gradient(to right, rgb(116, 116, 116), rgb(170, 169, 169));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    &__wristwatch{
+       
+        margin-top: 1px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        
+        justify-content: center;
+        justify-content: space-around;
+
+        &__brand{
+
+            text-align: center;
+            justify-content: center;
+
+            &__img13{
+                cursor: pointer;
+                height: 30rem;
+                width: 19rem;
+                margin-top: 2rem;
+                margin-bottom: 1px;
+            }
+            &__name{
+                font-size: 11px;
+                font-weight: 800;
+                line-height: 18px;
+                color: #262626;
+            }
+            &__name2{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #000000;
+            }
+
+            &__cardi{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #706f6f;
+                font-style:italic;    
+            }
+            &__price4{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #000000;
+            }
+        }
+       
+    
+    }
+}

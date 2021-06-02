@@ -1,0 +1,62 @@
+.profile{
+    margin-left: 3rem;
+    display: none;
+
+    &__account{
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 35px;
+        color: #000000;
+        font-weight: 400;
+        display: block;
+        border-bottom: 1px solid black;
+        margin-bottom: 2rem;
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__crt{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 28px;
+        color: #000000;
+        font-weight: 400;
+    }
+
+    &__detail{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 28px;
+        color: #000000;
+        font-weight: 400;
+    }
+
+    &__yet{
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 22px;
+        color: #000000;
+        font-weight: 400; 
+    }
+
+    &__name{
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 22px;
+        color: #000000;
+        font-weight: 400; 
+    }
+
+    &__view{
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 22px;
+        color: #262626;
+        font-weight: 400; 
+        text-decoration: underline;
+    }
+}

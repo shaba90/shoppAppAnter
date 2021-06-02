@@ -1,0 +1,217 @@
+
+/** grid **/
+
+body, main {
+    display: grid;
+    grid-gap: 1rem;
+    
+  }
+  
+  main {
+    grid-template: 
+      "content" 
+      "summary" 
+      "help"
+      "actions" 
+      "promo";
+  }
+  
+  @media ( min-width: 50rem ) {
+    main {
+      grid-template: 
+        "promo promo"
+        "content summary" 
+        "content help"
+        "content actions" ;
+        
+      grid-template-columns: auto 20rem;
+    }
+  }
+  
+  .summary { grid-area: summary; }
+  .promo { grid-area: promo; }
+  .actions { grid-area: actions; }
+  .cart { grid-area: content; }
+  .help { grid-area: help; }
+  
+    
+    
+    
+  /** styling **/
+  
+  @media ( min-width: 50rem ) {
+    body, main {
+      max-width: 60rem;
+    }
+    body {
+      margin: auto;
+    }
+  }
+  
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    background: white;
+    .total { 
+      font-family: monospace;
+      text-align: right; 
+    }
+  }
+  .cart{
+    display: flex;
+  }
+  
+  .cart {
+    .item {
+      display: flex;
+      justify-content: space-between;
+      font-family: monospace;
+      font-size: 18px;
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px dotted hsla(225,25,50,1);
+      }
+    }
+    .name {
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0;
+    }
+    .price {
+      font-family: monospace;
+      margin: 0;
+    }
+  }
+  @media ( min-width: 50rem ) {
+    .cart { padding: 2rem 1rem; }
+    .cart .name, 
+    .cart .price { font-size: 24px; }
+    .cart .item:not(:last-child) { 
+      margin-bottom: 1rem; 
+      padding-bottom: 1rem;
+    }
+  }
+  
+  .actions {
+    background: white;
+    text-align: right;
+    
+    button {
+      background: black;
+      box-shadow: 0 2px 4px hsla(165,35,10,1);
+      border: none;
+      border-radius: 3px;
+      padding: 0.5rem 1rem;
+      color: white;
+    }
+  }
+  
+  .promo {
+    color: white;
+    background: black;
+    font-weight: 800;
+  }
+  
+  @media ( min-width: 50rem ) {
+    .promo {
+      min-height: 0;
+      text-align: center;
+    }
+  }
+  
+  .help {
+    color: black;
+    background: white;
+  }
+  
+  header, footer, section {
+    background: white;
+    box-shadow: 0 4px 4px 2px hsla(225,15,10,0.2);
+    border-radius: 3px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  section {
+    min-height: 3rem;
+  }
+  
+  header, footer {
+    box-shadow: none;
+    color: black;
+    background: white;
+    border: 1px dashed hsla(225,15,30,1);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 1rem;
+    font-weight: 800;
+    
+  }
+  
+  body {
+    color:black;
+    background: white;
+    padding: 15px;
+    font-family: "Heebo", sans-serif;
+    font-weight: 300;
+  }
+  
+  ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+  .jimg{
+    width: 8rem;
+    height: 10rem;
+}
+.jtext{
+    margin-left: 4rem;
+    color: black;
+    line-height: -1rem;
+    width: 5rem;
+}
+a{
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+.qtySelector{
+border: 1px solid #ddd;
+width: 110px;
+height: 35px;
+margin: 8px auto 0;
+}
+.qtySelector .fa{
+padding: 10px 5px;
+width: 35px;
+height: 100%;
+float: left;
+cursor: pointer;
+}
+.qtySelector .fa.clicked{
+font-size: 12px;
+padding: 12px 5px;
+}
+.qtySelector .fa-minus{
+border-right: 1px solid #ddd;
+}
+.qtySelector .fa-plus{
+border-left: 1px solid #ddd;
+  margin-left: 1.1zrem;
+  margin-top: -0.1rem;
+}
+.qtySelector .qtyValue{
+border: none;
+padding: 5px;
+width: 15px;
+height: 100%;
+float: left;
+text-align: center
+}
+
