@@ -42,10 +42,11 @@ body {
   .big-screen__childs {
     display: inline-block;
     margin-left: 5%;
-    font-size: 17px;
+    font-size: 19px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 20px;
     color: #000000;
+    text-transform: uppercase;
     font-weight: 400;
     cursor: pointer; }
     .big-screen__childs:first-child {
@@ -55,6 +56,9 @@ body {
   width: 20rem;
   margin-top: 1rem;
   margin-bottom: 2px; }
+  @media screen and (min-width: 56.3em) {
+    .img1 {
+      margin-left: 5rem; } }
 
 .col {
   display: none; }
@@ -341,13 +345,78 @@ body {
     .login__ret2:hover, .login a:hover {
       text-decoration: underline; }
 
+.video__video1 {
+  margin-top: 10rem;
+  height: min-content; }
+
 .video__content {
   width: 100vw;
   height: 56vw;
-  margin-top: 10rem; }
+  display: none; }
+  @media screen and (min-width: 56.3em) {
+    .video__content {
+      display: block; } }
+
+.video__videoimage {
+  width: 100vw;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 56vw; }
+  @media screen and (min-width: 56.3em) {
+    .video__videoimage {
+      display: none; } }
+  .video__videoimage__dis {
+    position: absolute;
+    left: 1%;
+    top: 79%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer; }
+    .video__videoimage__dis:hover {
+      background-color: white;
+      color: black; }
+  .video__videoimage__text2 {
+    font-weight: 700;
+    position: absolute;
+    left: 2%;
+    top: 69%;
+    font-size: 13px;
+    background-image: linear-gradient(to bottom, #f2f7f6, #797777);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .video__videoimage__text {
+    font-weight: 700;
+    line-height: 24px;
+    background-image: linear-gradient(to bottom, #f2f7f6, #797777);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    left: 2%;
+    top: 56%;
+    font-size: 24px; }
+  .video__videoimage__img {
+    width: 100%;
+    height: 100%; }
 
 .header2 {
-  position: fixed; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; }
 
 .category {
   backface-visibility: hidden; }
@@ -426,7 +495,12 @@ body {
   margin-top: 2rem;
   justify-content: center;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
+  @media screen and (min-width: 56.3em) {
+    .background {
+      margin-top: 4rem;
+      height: 50rem; } }
   .background__friday {
     text-transform: uppercase;
     display: inline-block;
@@ -434,11 +508,18 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 18px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 24px;
-    font-weight: 700;
-    margin-top: 9rem; }
+    font-weight: 600;
+    margin-top: 9rem;
+    cursor: pointer; }
+    @media screen and (min-width: 56.3em) {
+      .background__friday {
+        font-size: 30px;
+        line-height: 28px;
+        font-weight: 800;
+        margin-top: 28rem; } }
 
 .footer {
   padding: 0 4rem;
@@ -571,7 +652,8 @@ body {
     padding-right: 2px;
     background-color: black;
     color: white;
-    margin-top: 3px; }
+    margin-top: 3px;
+    cursor: pointer; }
     @media screen and (min-width: 56.3em) {
       .footer__bot {
         padding: 1rem 5rem;
@@ -587,7 +669,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    cursor: pointer; }
   .footer__face {
     height: 3rem;
     width: 3rem; }
@@ -622,6 +705,7 @@ body {
     color: #FFF;
     border-radius: 50px;
     text-align: center;
+    cursor: pointer;
     font-size: 30px;
     box-shadow: 2px 2px 3px #999;
     z-index: 100; }
@@ -997,7 +1081,8 @@ body {
   height: 5rem;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  z-index: 1000; }
   @media screen and (min-width: 56.3em) {
     .header {
       padding: 0 2rem;
@@ -1031,14 +1116,12 @@ body {
       margin-right: -3.5rem; }
       @media screen and (min-width: 56.3em) {
         .header__search__input {
-          width: 90%; } }
+          width: 90%;
+          padding: 1rem 2rem; } }
       .header__search__input:focus {
         outline: none;
         width: 100%;
         background-color: #FFFFFF; }
-        @media screen and (min-width: 56.3em) {
-          .header__search__input:focus {
-            width: 100%; } }
       .header__search__input::-webkit-input-placeholder {
         font-weight: 100;
         color: #ccc; }
@@ -1062,6 +1145,7 @@ body {
         margin-left: 2rem;*/ }
   .header__login2 {
     color: white;
+    cursor: pointer;
     /*color: $color-header-white;
         line-height: 1.5rem;
         font-family: Arial, Helvetica, sans-serif;
@@ -1075,8 +1159,13 @@ body {
         &:hover{
             text-decoration: underline;
         }*/ }
+    @media screen and (min-width: 56.3em) {
+      .header__login2 {
+        font-size: 15px;
+        margin-right: 2rem; } }
   .header__login {
     color: white;
+    cursor: pointer;
     /* flex: 0 0 10%;
         color: $color-header-white;
         line-height: 1.5rem;
@@ -1093,6 +1182,10 @@ body {
         &:not(:first-child){
             margin-right:2.5rem;
         }*/ }
+    @media screen and (min-width: 56.3em) {
+      .header__login {
+        font-size: 15px;
+        margin-right: 2rem; } }
 
 /*.grid{
     display: grid;
@@ -1333,27 +1426,56 @@ body {
       height: 30rem;
       width: 19rem;
       margin-top: 1rem; }
+      @media screen and (min-width: 56.3em) {
+        .grid__female__shoe__img1 {
+          height: 50rem;
+          width: 29rem; } }
     .grid__female__shoe__remain {
       font-size: 11px;
       font-weight: 800;
       line-height: 18px;
       color: #262626; }
+      @media screen and (min-width: 56.3em) {
+        .grid__female__shoe__remain {
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 18px;
+          margin-top: 5px; } }
     .grid__female__shoe__always {
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
       color: #000000; }
+      @media screen and (min-width: 56.3em) {
+        .grid__female__shoe__always {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          margin-top: 5px; } }
     .grid__female__shoe__cardi {
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
       color: #706f6f;
       font-style: italic; }
+      @media screen and (min-width: 56.3em) {
+        .grid__female__shoe__cardi {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          color: #706f6f;
+          font-style: italic; } }
     .grid__female__shoe__price {
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
       color: #000000; }
+      @media screen and (min-width: 56.3em) {
+        .grid__female__shoe__price {
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #000000; } }
 
 .grid__shoe1 {
   margin-top: 1px;
@@ -1371,27 +1493,56 @@ body {
       width: 19rem;
       margin-top: 1rem;
       margin-bottom: 1px; }
+      @media screen and (min-width: 56.3em) {
+        .grid__shoe1__men__img5 {
+          height: 50rem;
+          width: 29rem; } }
     .grid__shoe1__men__red {
       font-size: 11px;
       font-weight: 800;
       line-height: 18px;
       color: #262626; }
+      @media screen and (min-width: 56.3em) {
+        .grid__shoe1__men__red {
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 18px;
+          margin-top: 5px; } }
     .grid__shoe1__men__nike {
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
       color: #000000; }
+      @media screen and (min-width: 56.3em) {
+        .grid__shoe1__men__nike {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          margin-top: 5px; } }
     .grid__shoe1__men__cardi {
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
       color: #706f6f;
       font-style: italic; }
+      @media screen and (min-width: 56.3em) {
+        .grid__shoe1__men__cardi {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          color: #706f6f;
+          font-style: italic; } }
     .grid__shoe1__men__price2 {
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
       color: #000000; }
+      @media screen and (min-width: 56.3em) {
+        .grid__shoe1__men__price2 {
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #000000; } }
 
 .grid__bags {
   font-size: 24px;
@@ -1423,27 +1574,56 @@ body {
       width: 19rem;
       margin-top: 2rem;
       margin-bottom: 1px; }
+      @media screen and (min-width: 56.3em) {
+        .grid__bag__ladies__img9 {
+          height: 50rem;
+          width: 29rem; } }
     .grid__bag__ladies__handle {
       font-size: 11px;
       font-weight: 800;
       line-height: 18px;
       color: #262626; }
+      @media screen and (min-width: 56.3em) {
+        .grid__bag__ladies__handle {
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 18px;
+          margin-top: 5px; } }
     .grid__bag__ladies__handle2 {
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
       color: #000000; }
+      @media screen and (min-width: 56.3em) {
+        .grid__bag__ladies__handle2 {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          margin-top: 5px; } }
     .grid__bag__ladies__cardi {
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
       color: #706f6f;
       font-style: italic; }
+      @media screen and (min-width: 56.3em) {
+        .grid__bag__ladies__cardi {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          color: #706f6f;
+          font-style: italic; } }
     .grid__bag__ladies__price3 {
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
       color: #000000; }
+      @media screen and (min-width: 56.3em) {
+        .grid__bag__ladies__price3 {
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #000000; } }
 
 .grid__wristwatch5 {
   font-size: 24px;
@@ -1474,24 +1654,53 @@ body {
       width: 19rem;
       margin-top: 2rem;
       margin-bottom: 1px; }
+      @media screen and (min-width: 56.3em) {
+        .grid__wristwatch__brand__img13 {
+          height: 50rem;
+          width: 29rem; } }
     .grid__wristwatch__brand__name {
       font-size: 11px;
       font-weight: 800;
       line-height: 18px;
       color: #262626; }
+      @media screen and (min-width: 56.3em) {
+        .grid__wristwatch__brand__name {
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 18px;
+          margin-top: 5px; } }
     .grid__wristwatch__brand__name2 {
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
       color: #000000; }
+      @media screen and (min-width: 56.3em) {
+        .grid__wristwatch__brand__name2 {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          margin-top: 5px; } }
     .grid__wristwatch__brand__cardi {
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
       color: #706f6f;
       font-style: italic; }
+      @media screen and (min-width: 56.3em) {
+        .grid__wristwatch__brand__cardi {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          color: #706f6f;
+          font-style: italic; } }
     .grid__wristwatch__brand__price4 {
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
       color: #000000; }
+      @media screen and (min-width: 56.3em) {
+        .grid__wristwatch__brand__price4 {
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #000000; } }

@@ -251,6 +251,10 @@
             height: 30rem;
             width: 19rem;
             margin-top: 1rem;
+            @media screen and (min-width:56.3em) {
+                height: 50rem;
+                width: 29rem;
+             }
         }
 
         &__remain{
@@ -258,6 +262,15 @@
          font-weight: 800;
          line-height: 18px;
          color: #262626;
+         @media screen and (min-width:56.3em) {
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 18px;
+            margin-top: 5px;
+           
+            
+         }
+        
         }
         
         &__always{
@@ -265,6 +278,14 @@
          font-weight: 400;
          line-height: 22px;
          color: #000000;
+         @media screen and (min-width:56.3em) {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-top: 5px;
+            
+         }
+        
      }
      
      &__cardi{
@@ -272,7 +293,15 @@
          font-weight: 400;
          line-height: 22px;
          color: #706f6f;
-         font-style:italic;    
+         font-style:italic; 
+         @media screen and (min-width:56.3em) {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #706f6f;
+            font-style:italic; 
+            
+         }   
      }
      
      &__price{
@@ -280,6 +309,13 @@
          font-weight: 400;
          line-height: 24px;
          color: #000000;
+         @media screen and (min-width:56.3em) {
+            font-size: 17px;
+         font-weight: 400;
+         line-height: 24px;
+         color: #000000;
+            
+         }  
      }
      }
 
@@ -324,18 +360,36 @@
                 width: 19rem;
                 margin-top: 1rem;
                 margin-bottom: 1px;
+                @media screen and (min-width:56.3em) {
+                    height: 50rem;
+                    width: 29rem;
+                 }
             }
             &__red{
                 font-size: 11px;
                 font-weight: 800;
                 line-height: 18px;
                 color: #262626;
+                @media screen and (min-width:56.3em) {
+                    font-size: 20px;
+                    font-weight: 800;
+                    line-height: 18px;
+                    margin-top: 5px;
+                    
+                 } 
             }
             &__nike{
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 22px;
                 color: #000000;
+                @media screen and (min-width:56.3em) {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    margin-top: 5px;
+                    
+                 }
             }
 
             &__cardi{
@@ -343,13 +397,28 @@
                 font-weight: 400;
                 line-height: 22px;
                 color: #706f6f;
-                font-style:italic;    
+                font-style:italic;
+                @media screen and (min-width:56.3em) {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    color: #706f6f;
+                    font-style:italic; 
+                    
+                 }      
             }
             &__price2{
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 24px;
                 color: #000000;
+                @media screen and (min-width:56.3em) {
+                    font-size: 17px;
+                 font-weight: 400;
+                 line-height: 24px;
+                 color: #000000;
+                    
+                 }  
             }
         }
        
@@ -394,18 +463,36 @@
                 width: 19rem;
                 margin-top: 2rem;
                 margin-bottom: 1px;
+                @media screen and (min-width:56.3em) {
+                    height: 50rem;
+                    width: 29rem;
+                 }
             }
             &__handle{
                 font-size: 11px;
                 font-weight: 800;
                 line-height: 18px;
                 color: #262626;
+                @media screen and (min-width:56.3em) {
+                    font-size: 20px;
+                    font-weight: 800;
+                    line-height: 18px;
+                    margin-top: 5px;
+                    
+                 } 
             }
             &__handle2{
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 22px;
                 color: #000000;
+                @media screen and (min-width:56.3em) {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    margin-top: 5px;
+                    
+                 }
             }
 
             &__cardi{
@@ -413,13 +500,28 @@
                 font-weight: 400;
                 line-height: 22px;
                 color: #706f6f;
-                font-style:italic;    
+                font-style:italic; 
+                @media screen and (min-width:56.3em) {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    color: #706f6f;
+                    font-style:italic; 
+                    
+                 }     
             }
             &__price3{
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 24px;
                 color: #000000;
+                @media screen and (min-width:56.3em) {
+                    font-size: 17px;
+                 font-weight: 400;
+                 line-height: 24px;
+                 color: #000000;
+                    
+                 } 
             }
         }
        
@@ -462,18 +564,36 @@
                 width: 19rem;
                 margin-top: 2rem;
                 margin-bottom: 1px;
+                @media screen and (min-width:56.3em) {
+                    height: 50rem;
+                    width: 29rem;
+                 }
             }
             &__name{
                 font-size: 11px;
                 font-weight: 800;
                 line-height: 18px;
                 color: #262626;
+                @media screen and (min-width:56.3em) {
+                    font-size: 20px;
+                    font-weight: 800;
+                    line-height: 18px;
+                    margin-top: 5px;
+                    
+                 } 
             }
             &__name2{
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 22px;
                 color: #000000;
+                @media screen and (min-width:56.3em) {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    margin-top: 5px;
+                    
+                 }
             }
 
             &__cardi{
@@ -481,13 +601,28 @@
                 font-weight: 400;
                 line-height: 22px;
                 color: #706f6f;
-                font-style:italic;    
+                font-style:italic; 
+                @media screen and (min-width:56.3em) {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    color: #706f6f;
+                    font-style:italic; 
+                    
+                 }      
             }
             &__price4{
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 24px;
                 color: #000000;
+                @media screen and (min-width:56.3em) {
+                    font-size: 17px;
+                 font-weight: 400;
+                 line-height: 24px;
+                 color: #000000;
+                    
+                 } 
             }
         }
        

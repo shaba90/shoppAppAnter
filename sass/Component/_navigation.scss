@@ -3,6 +3,7 @@
     background-color: #FFFFFF;
     width: 100vw;
     height: 10rem;
+  
 
    
   
@@ -39,10 +40,11 @@
     display: inline-block;
     
     margin-left: 5%;
-    font-size: 17px;
+    font-size: 19px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 20px;
     color: #000000;
+    text-transform: uppercase;
     font-weight: 400;
     cursor: pointer;
 
@@ -55,6 +57,12 @@
     width: 20rem;
     margin-top: 1rem;
     margin-bottom: 2px;
+    @media screen and (min-width:56.3em) {
+      margin-left: 5rem;
+     
+      
+      
+   }
 }
 
 .col{
