@@ -360,7 +360,37 @@ body {
 .video__videoimage {
   width: 100vw;
   display: block;
-  position: relative;
+  position: rel
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ative;
   overflow: hidden;
   height: 56vw; }
   @media screen and (min-width: 56.3em) {
@@ -758,7 +788,9 @@ body {
     height: 70vh;
     grid-template-rows: 70px 1fr 70px;
     grid-template-columns: 70px 1fr;
-    grid-template-areas: "header header" "nav    main" "footer footer"; }
+    grid-template-areas: "header header"
+ "nav    main"
+ "footer footer"; }
     .admin .admin__header {
       display: flex;
       flex-basis: 100%;

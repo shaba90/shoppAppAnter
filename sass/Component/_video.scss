@@ -35,20 +35,25 @@
     &__dis{
       
       position: absolute;
-      left: 1%;
+      left: 9%;
       top: 79%;
       
       border: none;
       outline: none;
-      font-size: 14px;
-      font-weight: 400;
+      font-size: 17px;
+      font-weight: 700;
       font-family: Arial, Helvetica, sans-serif;
      text-transform: uppercase;
-      padding: 1rem 1rem;
+      padding: 1.5rem 7rem;
       background-color:black;
       color: white;
-      border-radius: 5px;
+      border-radius: 50px;
       cursor: pointer;
+      @media screen and (max-width:16.3em) {
+        padding: 6px 1.8rem;
+         
+            
+       }
       &:hover{
         background-color:white;
         color: black;
@@ -62,26 +67,49 @@
       top: 69%;
       font-size: 13px;
       background-image: linear-gradient(to bottom, rgb(242, 247, 246), rgb(121, 119, 119));
-         background-clip: text;
-         -webkit-background-clip: text;
-         color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      @media screen and (max-width:16.3em) {
+        font-size: 7px;
+         
+            
+       }
+      @media screen and (min-width:38.3em) {
+        position: absolute;
+        left: 2%;
+        top: 72%;
+         
+            
+       }
       
     }
     &__text{
       
       font-weight: 700;
       line-height: 24px;
-      
       background-image: linear-gradient(to bottom, rgb(242, 247, 246), rgb(121, 119, 119));
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
       font-family: Arial, Helvetica, sans-serif;
       text-transform: uppercase;
       position: absolute;
       left: 2%;
       top: 56%;
       font-size: 24px;
+      @media screen and (max-width:16.3em) {
+        font-size: 11px;
+         
+            
+       }
+      @media screen and (min-width:38.3em) {
+      position: absolute;
+      left: 2%;
+      top: 65%;
+       
+          
+     }
     }
 
     &__img{

@@ -123,6 +123,11 @@
     &__login2{
         color: white;
         cursor: pointer;
+        @media screen and (max-width:19.3em) {
+            font-size: 9px;
+              
+                 
+            }
         @media screen and (min-width:56.3em) {
            font-size: 15px;
            margin-right: 2rem;
@@ -147,6 +152,11 @@
     &__login{
         color: white;
         cursor: pointer;
+        @media screen and (max-width:19.3em) {
+           font-size: 9px;
+             
+                
+           }
         @media screen and (min-width:56.3em) {
             font-size: 15px;
             margin-right: 2rem;
